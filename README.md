@@ -37,7 +37,7 @@ You can modify the parameters in `run_llama3.sh` as needed.
 
 - The `mode` parameter has three options: `bt`, `fr`, and `fc`, which stand for Bradley-Terry (BT) model, Fairness Regularization, and Fairness Coefficient, respectively. 
 
-- The parameters `alpha`, `beta`, and `gamma` correspond to the three hyperparameters discussed in the paper.
+- The parameters `alpha`, `tau`, and `gamma` correspond to the three hyperparameters discussed in the paper.
 
 ## Fair-DPO
 
@@ -72,7 +72,7 @@ You can modify the parameters in `dpo_launch.sh` as needed.
 
 - The `mode` parameter has three options: `dpo`, `fr`, and `fc`, which stand for native DPO, Fairness Regularization DPO, and Fairness Coefficient DPO, respectively. 
 
-- The parameters `alpha`, `beta`, and `gamma` correspond to the three hyperparameters discussed in the paper.
+- The parameters `alpha`, `tau`, and `gamma` correspond to the three hyperparameters discussed in the paper.
 
 ## Acknowledgements
 
