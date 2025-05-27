@@ -2,12 +2,12 @@ ts=`date +%Y_%m_%d_%H_%M_%S`
 MASTER_PORT=29500
 mode=dpo #fr fc
 alpha=0.1
-beta=-1
+tau=-1
 gamma=0.5
 
 exp_name=llama3-sft
-# exp_name=llama3-sft-fair-reg-a${alpha}-b${beta}
-# exp_name=llama3-sft-fair-coe-a${alpha}-b${beta}
+# exp_name=llama3-sft-fair-reg-a${alpha}-t${tau}
+# exp_name=llama3-sft-fair-coe-g${gamma}-t${tau}
 
 output_path=./checkpoints/DPO/${exp_name}/output_train_$ts
 mkdir -p $output_path
@@ -30,7 +30,7 @@ accelerate launch \
    exp_name=$exp_name \
    +mode=$mode \
    +alpha=$alpha \
-   +beta=$beta \
+   +tau=$tau \
    +gamma=$gamma \
    ++cache_dir=$output_path \
    ++model.name_or_path=$MODEL_PATH \
