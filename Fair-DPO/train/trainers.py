@@ -822,13 +822,13 @@ class DPOTrainer(PairedPreferenceTrainer):
             losses = -F.logsigmoid(chosen_rewards - rejected_rewards)
         elif self.config.mode == "fr":
             u_loss = -F.logsigmoid(chosen_rewards - rejected_rewards)
-            f_loss = f_beta(chosen_rewards - rejected_rewards, beta=self.config.beta)
+            f_loss = f_beta(chosen_rewards - rejected_rewards, beta=self.config.tau)
             losses = (
                 u_loss - self.config.alpha * f_loss
             )  
         elif self.config.mode == "fc":
             u_loss = -F.logsigmoid(chosen_rewards - rejected_rewards)
-            f_loss = f_beta(chosen_rewards - rejected_rewards, beta=self.config.beta)
+            f_loss = f_beta(chosen_rewards - rejected_rewards, beta=self.config.tau)
             losses = u_loss * (f_loss**self.config.gamma)  
         else:
             raise ValueError(f"unsupported mode {mode}!!!")
