@@ -18,7 +18,7 @@ git checkout d17fd7cd3b71c6a7bf7af34d8dc73135bb7ea8e9
 pip3 install torch==2.1.2 torchvision torchaudio
 python -m pip install .
 pip install flash-attn==2.6.3
-pip install accelerate==0.33.0 # for gemma2 and llama3.1
+pip install accelerate==0.33.0 
 pip install deepspeed==0.12.2
 pip install transformers==4.43.4
 pip install numpy==1.26.4 # Note that the numpy version should be `numpy<2.0`. `Numpy 2.0` will encounter unexpected issues!!!
@@ -82,3 +82,16 @@ We would like to thank the following GitHub repositories for their contributions
 2. [RLHFlow/RLHF-Reward-Modeling](https://github.com/RLHFlow/RLHF-Reward-Modeling)
 3. [anthropics/hh-rlhf](https://github.com/anthropics/hh-rlhf)
    
+## Citation
+
+```
+@misc{ouyang2025rewardfairnessrlhfresource,
+      title={Towards Reward Fairness in RLHF: From a Resource Allocation Perspective}, 
+      author={Sheng Ouyang and Yulan Hu and Ge Chen and Qingyang Li and Fuzheng Zhang and Yong Liu},
+      year={2025},
+      eprint={2505.23349},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2505.23349}, 
+}
+```
