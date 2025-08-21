@@ -85,13 +85,27 @@ We would like to thank the following GitHub repositories for their contributions
 ## Citation
 
 ```
-@misc{ouyang2025rewardfairnessrlhfresource,
-      title={Towards Reward Fairness in RLHF: From a Resource Allocation Perspective}, 
-      author={Sheng Ouyang and Yulan Hu and Ge Chen and Qingyang Li and Fuzheng Zhang and Yong Liu},
-      year={2025},
-      eprint={2505.23349},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2505.23349}, 
+@inproceedings{ouyang-etal-2025-towards,
+    title = "Towards Reward Fairness in {RLHF}: From a Resource Allocation Perspective",
+    author = "Ouyang, Sheng  and
+      Hu, Yulan  and
+      Chen, Ge  and
+      Li, Qingyang  and
+      Zhang, Fuzheng  and
+      Liu, Yong",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.163/",
+    doi = "10.18653/v1/2025.acl-long.163",
+    pages = "3247--3259",
+    ISBN = "979-8-89176-251-0",
+    abstract = "Rewards serve as proxies for human preferences and play a crucial role in Reinforcement Learning from Human Feedback (RLHF). However, if these rewards are inherently imperfect, exhibiting various biases, they can adversely affect the alignment of large language models (LLMs). In this paper, we collectively define the various biases present in rewards as the problem of reward unfairness. We propose a bias-agnostic method to address the issue of reward fairness from a resource allocation perspective, without specifically designing for each type of bias, yet effectively mitigating them. Specifically, we model preference learning as a resource allocation problem, treating rewards as resources to be allocated while considering the trade-off between utility and fairness in their distribution. We propose two methods, Fairness Regularization and Fairness Coefficient, to achieve fairness in rewards. We apply our methods in both verification and reinforcement learning scenarios to obtain a fairness reward model and a policy model, respectively. Experiments conducted in these scenarios demonstrate that our approach aligns LLMs with human preferences in a more fair manner. Our data and code are available at\url{https://github.com/shoyua/Towards-Reward-Fairness}."
 }
 ```
